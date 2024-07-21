@@ -1,0 +1,44 @@
+@keyframes animacao {
+    from {
+        background-color: purple;
+        width: 500px;
+    }
+
+    to {
+        background-color: yellow;
+        width: 200px;
+    }
+}
+
+@keyframes animacao2 {
+    0% {
+        background-color: purple;
+        width: 500px;
+    }
+
+    50% {
+        background-color: yellow;
+        width: 200px;
+    }
+
+    100% {
+        background-color: red;
+        width: 20px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: purple;
+    animation-name: animacao2;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+}
